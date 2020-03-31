@@ -110,7 +110,7 @@ ggplot(dados, aes(cum_surpresa.y,cum_surpresa.x))+ geom_point(lwd=4) +
   geom_abline()+  xlab("Surpresa acumulada - Grupo de Controle ") + 
   ylab("Surpresa acumulada - Grupo de Tratamento")+cleanup
 
-setwd("C:/Users/Caio Azevedo/Dropbox/cb_demissao_tecnico/Caio/Figuras")
+setwd("C:/Users/Caio Azevedo/Documents/Documentos Caio/Github/Dissertacao/Figuras")
 dev.copy(pdf,"caso.pdf")
 dev.off()
 
