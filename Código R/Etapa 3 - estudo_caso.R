@@ -11,7 +11,7 @@ library(stargazer)
 
 
 #Diretório
-setwd("C:/Users/Caio Azevedo/Dropbox/cb_demissao_tecnico/Caio/data")
+setwd("C:/Users/Caio Azevedo/Documents/Documentos Caio/Github/Dissertacao/data")
 
 
 #Carregamento e configuração dos dados----

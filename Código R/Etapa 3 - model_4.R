@@ -11,17 +11,17 @@ library(stargazer)
 
 
 #Diretório
-setwd("C:/Users/Caio Azevedo/Dropbox/cb_demissao_tecnico/Caio/data")
+setwd("C:/Users/Caio Azevedo/Documents/Documentos Caio/Github/Dissertacao/data")
 
 
 #Carregamento e configuração dos dados----
 
-base <- read.table("base_window_007.csv", header = TRUE,sep = ",",dec=".",
+base <- read.table("base_window_004.csv", header = TRUE,sep = ",",dec=".",
                    fileEncoding = "latin1")
 
 base<-base %>% 
   mutate("home_match"=ifelse(condicao=="mandante",1,0)) %>% 
-  select(-di) %>% 
+  select(-di, -pts_4) %>% 
   mutate("m"=as.numeric(m)) 
 
 base<-base[complete.cases(base),]
@@ -30,7 +30,7 @@ base<-base[complete.cases(base),]
 
 #Selecionando as observações da janela----
 
-k<-7                      #definir o tamanho da janela
+k<-4                      #definir o tamanho da janela
 
 x<-c(seq(1,nrow(base),k))
 temporada<-matrix(nrow=length(x))
@@ -145,5 +145,6 @@ summary(linear1)
 summary(linear2)
 summary(linear3)
 
-#stargazer(naive1,naive2,naive3)
-#stargazer(linear1,linear2,linear3)
+
+#stargazer(naive1,naive2,naive3, decimal.mark = ",")
+#stargazer(linear1,linear2,linear3, decimal.mark = ",")

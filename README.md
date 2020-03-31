@@ -14,6 +14,8 @@ Repositório dos scripts utilizados na dissertação apresentada em 2019 ao Prog
 
 Linguagens utilizadas: R e Python
 
+Para o melhor entendimento das rotinas seguir Etapa 0 seguido por Etapa 1 (em Código R), Etapa 2 (em Código Python) e Etapa 3 (em código R).
+
 Link para dowload do artigo: https://www.anpec.org.br/encontro/2019/submissao/files_I/i8-f3fd561df1cc7a9016f164201728a0e3.pdf
 
 
