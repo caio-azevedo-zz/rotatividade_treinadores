@@ -1,8 +1,8 @@
 # Arquivos para replicação dos dados, tabelas e gráficos
 
-Informações da dissertação
+Repositório dos scripts utilizados na dissertação apresentada em 2019 ao Programa de Pós-graduação em Economia Aplicada do Centro de Ciências Sociais Aplicadas da Universidade Federal da Paraíba como requisito parcial para a obtenção do título de Mestre em Economia.
 
-Repositório dos scripts utilizados na dissertação apresentada ao Programa de Pós-graduação em Economia Aplicada do Centro de Ciências Sociais Aplicadas da Universidade Federal da Paraíba como requisito parcial para a obtenção do título de Mestre em Economia.
+# Informações da dissertação
 
 ## Rotatividade de Treinadores e o Desempenho das Equipes de Futebol no Brasil
 
