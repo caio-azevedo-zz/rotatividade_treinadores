@@ -1,14 +1,22 @@
+# Arquivos para replicação dos dados, tabelas e gráficos
 
-Dissertação apresentada em 2019 no Programa de Pós-Graduação em Economia da Universidade Federal da Paraíba.
+Informações da dissertação
+
+Repositório dos scripts utilizados na dissertação apresentada ao Programa de Pós-graduação em Economia Aplicada do Centro de Ciências Sociais Aplicadas da Universidade Federal da Paraíba como requisito parcial para a obtenção do título de Mestre em Economia.
+
+## Rotatividade de Treinadores e o Desempenho das Equipes de Futebol no Brasil
 
 **Autor**: Caio Oliveira Azevedo
 
-**Orientador**: Aléssio Tony Calvalcanti de Almeida
+**Orientador**: Prof. Dr. Aléssio Tony Calvalcanti de Almeida
 
-**Co-orientador**: Hilton Martins de Brito Ramalho
+**Co-orientador**: Prof. Dr. Hilton Martins de Brito Ramalho
+
+Linguagens utilizadas: R e Python
+
+Link para dowload do artigo: https://www.anpec.org.br/encontro/2019/submissao/files_I/i8-f3fd561df1cc7a9016f164201728a0e3.pdf
 
 
-## Rotatividade de Treinadores e o Desempenho das Equipes de Futebol no Brasil
 
 ### Resumo
 
