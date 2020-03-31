@@ -1,5 +1,5 @@
 
-Dissertação desenvolvida em 2019 no Programa de Pós-Graduação em Economia da Universidade Federal da Paraíba.
+Dissertação apresentada em 2019 no Programa de Pós-Graduação em Economia da Universidade Federal da Paraíba.
 
 **Autor**: Caio Oliveira Azevedo
 
