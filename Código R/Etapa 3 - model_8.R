@@ -3,10 +3,8 @@ rm(list=ls())
 
 
 #Pacotes
-library(data.table)
 library(dplyr)
 library(tidyr)
-library(xtable)
 library(stargazer)
 
 
@@ -30,7 +28,7 @@ base<-base[complete.cases(base),]
 
 #Selecionando as observações da janela----
 
-k<-8                      #definir o tamanho da janela
+k=8                      #definir o tamanho da janela
 
 x<-c(seq(1,nrow(base),k))
 temporada<-matrix(nrow=length(x))
@@ -98,14 +96,16 @@ tratado<-tratado[complete.cases(tratado)]
 periodo<-periodo[complete.cases(periodo)]
 m<-m[complete.cases(m)]
 
-dados<-cbind(temporada,time,pos_adv,pts,vit,diff_gols,home_match,tratado,
+dados<-cbind(temporada,pos_adv,pts,vit,diff_gols,home_match,tratado,
              periodo,m)
 
-dados<-as.data.frame(dados)
+
+dados<-data.frame(dados)
 
 #Naive Model----
 
-dados.naive<-dados %>% 
+dados.naive<-dados %>%
+  mutate("time"=time) %>% 
   filter(tratado==1)
 
 model_naive1<-formula(pts ~ home_match + pos_adv + periodo)
@@ -122,6 +122,7 @@ naive3<-lm(model_naive3, data = dados.naive)
 
 
 dados.linear<-dados %>% 
+  mutate("time"=time) %>% 
   mutate("interaction"=tratado*periodo)
 
 model_linear1<-formula(pts ~ home_match + pos_adv + tratado + periodo + 
@@ -144,6 +145,7 @@ summary(naive3)
 summary(linear1)
 summary(linear2)
 summary(linear3)
+
 
 #stargazer(naive1,naive2,naive3, decimal.mark = ",")
 #stargazer(linear1,linear2,linear3, decimal.mark = ",")

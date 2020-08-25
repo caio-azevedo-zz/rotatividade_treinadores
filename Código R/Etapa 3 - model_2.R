@@ -14,7 +14,7 @@ setwd("C:/Users/Caio Azevedo/Documents/Documentos Caio/Github/Dissertacao/data")
 
 #Carregamento e configuração dos dados----
 
-base <- read.table("base_window_005.csv", header = TRUE,sep = ",",dec=".",
+base <- read.table("base_window_002.csv", header = TRUE,sep = ",",dec=".",
                    fileEncoding = "latin1")
 
 base<-base %>% 
@@ -28,7 +28,7 @@ base<-base[complete.cases(base),]
 
 #Selecionando as observações da janela----
 
-k=5                      #definir o tamanho da janela
+k=2                      #definir o tamanho da janela
 
 x<-c(seq(1,nrow(base),k))
 temporada<-matrix(nrow=length(x))
